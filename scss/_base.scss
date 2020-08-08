@@ -1,0 +1,50 @@
+$primary-color: #71c55d;
+$dark-color: #505050;
+
+// Roboto Condensed Font
+@font-face{
+    src: url('../fonts/roboto-condensed.light.ttf');
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    // background-color: red;
+    color: $dark-color;
+    font-family: 'Roboto Condensed';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7em;
+}
+
+header, footer, summary, details, aside, section, nav, main, article{
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.1;
+}
+
+p{
+    margin: 0.8rem 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    color: $dark-color;
+    text-decoration: none;
+}

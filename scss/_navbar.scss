@@ -1,0 +1,99 @@
+#navbar{
+    background-color: #fff;
+    border-bottom: 1px solid #dddddd;
+    box-shadow: 2px 2px 5px #dddddd;
+    position: fixed;
+    padding: 0.6rem 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+
+        #logo{
+            font-size: 26px;
+            font-weight: 500;
+        }
+
+        .nav-menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li{
+                padding: 0 0.8rem;
+
+                a{
+                    font-size: 0.95rem;
+                    font-weight: normal;
+                    text-align: center;
+                    transition: color 0.3s;
+
+                    &.active,
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+
+                &.dropdown-link{
+                    position: relative;
+
+                    & .fas{
+                        font-size: 10px;
+                        font-weight: 600;
+                    }
+
+                    .dropdown-menu{
+                        background: #fff;
+                        border-radius: 3px;
+                        visibility: hidden;
+                        border: 1px solid #eeeeee;
+                        position: absolute;
+                        top: 46px;
+                        left: 0;
+                        opacity: 0;
+                        padding: 1rem 0.8rem;
+                        transition: all 0.3s ease-in-out 0.1s;
+                        width: 230px;
+                        z-index: 1;
+
+                        li:not(:last-child){
+                            padding-bottom: 0.6rem;
+                        }
+
+                        a{
+                            display: block;
+                            text-align: left;
+                        }
+                    }
+
+                    &:hover{
+                        .dropdown-menu{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+                
+            }      
+        }
+    }
+}
+
+.hide-menu{
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 900;
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    z-index: 10;
+
+    &.active{
+        display: block !important;
+    }
+}

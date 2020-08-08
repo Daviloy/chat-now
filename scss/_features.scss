@@ -1,0 +1,24 @@
+#features{
+    .box-items{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 80px;
+        grid-gap: 10px 0;
+
+        div{
+            @extend %box-item;
+
+            img{
+                @extend %box-image;
+            }
+
+            h3{
+                @extend %box-heading;
+            }
+
+            p{
+                @extend %box-text;
+            }
+        }
+    }
+}

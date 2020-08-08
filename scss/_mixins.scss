@@ -1,0 +1,13 @@
+@mixin platforms_spacing($property) {
+    #site-header{
+        .container{
+            .header-content{
+               .platforms{
+                   a:not(:last-child){
+                        margin-right:$property;
+                   }
+               }
+            }
+        }
+    }
+}

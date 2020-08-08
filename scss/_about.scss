@@ -1,0 +1,50 @@
+#about{
+    .container{
+        display: flex;
+
+        div{
+
+            &:first-child{
+                text-align: right;
+                width: 40%;
+
+                img{
+                    max-width: 60%;
+                }
+            }
+
+            &:nth-child(2){
+                flex: 1.8;
+                line-height: 2rem;
+                max-width: 40%;
+                padding: 45px 0 0 30px;
+
+                h2{
+                    font-family: 'Roboto';
+                    font-weight: 100;
+                    font-size: 45px;
+
+                    span{
+                        font-weight: bolder;
+                    }
+                }
+
+                p{
+                    margin-bottom: 1rem;
+                }
+
+                ul{
+                    li{
+                        font-size: 15px;
+                        padding-bottom: 5px;
+
+                        i{
+                            font-size: 9px;
+                            margin-right: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

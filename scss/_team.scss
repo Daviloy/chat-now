@@ -1,0 +1,63 @@
+#team{
+    .box-items{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        margin-top: 70px;
+
+        > div{
+            @extend %round-shadow;
+            overflow: hidden;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+            }
+
+            &:hover .team-info{
+                bottom: 0;
+            }
+
+            .team-info{
+                background-color: #fff;
+                height: 50%;
+                position: absolute;
+                bottom: -47%;
+                left: 0;
+                padding-top: 20px;
+                transition: all 0.5s ease 0.1s;
+                width: 100%;
+                z-index: 1;
+
+                .social-icons{
+                    padding-bottom: 13px;
+
+                    i{
+                        color: #626262;
+                        cursor: pointer;
+                        font-size: 13px;
+                        margin-right: 25px;
+                        transition: color 0.3s;
+
+                        &:hover{
+                            color: $primary-color;
+                        }
+                    }
+                }
+
+                h3{
+                    font-family: 'Roboto Condensed';
+                    font-size: 17px;
+                    font-weight: normal;
+                }
+
+                p{
+                    @extend %box-heading;
+                    margin: 10px 0 0 0;
+                }
+            }
+        }
+    }
+}

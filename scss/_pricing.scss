@@ -1,0 +1,45 @@
+#pricing{
+    .box-items{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 25px;
+        margin-top: 80px;
+
+        > div{
+            @extend %card-border;
+            padding: 30px 15px;
+
+            h3{
+                @extend %box-heading;
+                letter-spacing: 1px;
+                margin-top: 12px;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+
+            h4{
+                font-size: 30px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+
+            ul{
+                li{
+                    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+                    font-size: 15px;
+                    padding: 12px;
+                }
+            }
+
+            .btn-primary{
+                font-size: 13px;
+                font-weight: bold;
+                margin: 0.8rem auto 0 auto;
+
+                i{
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+}
